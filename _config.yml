@@ -60,10 +60,9 @@ plugins:
 author:
   name   : "Gatien Boquet"
   avatar : "/assets/images/photo_bio.jpg"
+  location         : "Montréal, Canada"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Montréal, Canada"
-      icon: "fa fa-fw fa-map-marker"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
