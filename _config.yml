@@ -62,9 +62,8 @@ author:
   avatar : "/assets/images/photo_bio.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - label: "Montréal, Canada"
+      icon: "fas fa-fw fa-map-marker"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
