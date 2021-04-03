@@ -61,10 +61,10 @@ author:
   name   : "Gatien Boquet"
   avatar : "/assets/images/photo_bio.jpg"
   location : "Montréal, Canada"
-  bio    : "Président de Dubstep Mag |  Consultant TI"
+  bio    : "Président de Dubstep Mag | Consultant TI "
   links:
     - label: "LinkedIn"
-      icon: "fa fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin-square"
       url: "https://www.linkedin.com/in/gatienboquet/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
