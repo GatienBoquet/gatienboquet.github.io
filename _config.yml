@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Gatien Boquet"
-  avatar : "/assets/images/photo-bio.jpg"
+  avatar : "/assets/images/photo_bio.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "Website"
