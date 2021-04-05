@@ -1,0 +1,49 @@
+{% if company.header.teaser %}
+  {% capture teaser %}{{ company.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if company.id %}
+  {% assign title = company.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = company.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        {% if company.link %}
+          <a href="{{ company.link }}">  <img src=
+            {% if teaser contains "://" %}
+              "{{ teaser }}"
+            {% else %}
+              "{{ teaser | absolute_url }}"
+            {% endif %}
+            alt=""></a> <a href="{{ company.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ company.url | absolute_url }}" rel="permalink"> <img src=
+            {% if teaser contains "://" %}
+              "{{ teaser }}"
+            {% else %}
+              "{{ teaser | absolute_url }}"
+            {% endif %}
+            alt="">
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if company.link %}
+        <a href="{{ company.link }}">{{ title }}</a> <a href="{{ company.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ company.url | absolute_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    {% if company.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if company.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ company.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+  </article>
+</div>
