@@ -1,0 +1,23 @@
+---
+layout: archive
+---
+
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+-->
+<h3 class="archive__subtitle">Company Analysis</h3>
+<div class="grid__wrapper">
+<!--{% assign posts = site.categories['Earnings Report']  %}-->
+
+
+
+  {% for post in site.posts %}
+    {% if post.categories contains "Company Analysis" and post.draft != 1 %}
+         {% include archive-single.html type="grid" %}
+    {% else %} 
+     
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+<!--{% include paginator.html %}-->
