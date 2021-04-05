@@ -1,7 +1,8 @@
 ---
 title: "Posts by Year"
 permalink: /posts/
+layout: collection
 collection: posts
-layout: grid
+entries_layout: grid
 classes: wide
 ---
