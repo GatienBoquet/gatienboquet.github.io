@@ -91,9 +91,7 @@ defaults:
       path: ""
       type: posts
     values:	
-      layout: collection
-      collection: posts
-      entries_layout: grid
+      layout: single
       author_profile: true
       read_time: true
       comments: true
