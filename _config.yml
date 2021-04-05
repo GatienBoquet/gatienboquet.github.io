@@ -32,7 +32,6 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-entries_layout: grid
 
 include:
   - _pages
@@ -91,9 +90,10 @@ defaults:
   - scope:
       path: ""
       type: posts
-    values:
-      entries_layout: grid	
-      layout: single
+    values:	
+      layout: collection
+      collection: posts
+      entries_layout: grid
       author_profile: true
       read_time: true
       comments: true
