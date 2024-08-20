@@ -1,4 +1,4 @@
-title: Gatien Boquet! # name of the site
+title: Gatien Boquet # name of the site
 author: Gatien Boquet # name of site's author
 email: gatien.boquet@gmail.com # email of site's author
 url: https://gatien.dev # root address of the site
@@ -13,7 +13,7 @@ favicon: "logo.png" # name+extension of favicon (which must be put on the root f
 
 theme_config:
   appearance: "light" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
+  back_home_text: "Retour à l'accueil...." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: false # show blog description in home page
 
