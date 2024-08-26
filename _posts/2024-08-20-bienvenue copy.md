@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Bienvenue"
+title: "hi"
 date: 2024-08-20
-categories: french
+categories: english
 ---
 
-Bonjour
+Hello
 
 ---
 
